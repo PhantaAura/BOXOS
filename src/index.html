@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https: http:; style-src 'self' 'unsafe-inline'; script-src 'self'; frame-src 'self' https: http:; connect-src 'self'">
+<title>BOXOS Windows 99 Edition</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<canvas id="wallpaper"></canvas>
+<div id="desktop">
+  <div id="icons"></div>
+  <div id="brandmark">
+    <div id="brandlogo"></div>
+    <div class="b1">BOXOS<sup>®</sup></div>
+    <div class="b2">Windows 99 Edition</div>
+  </div>
+  <div id="windows"></div>
+  <div id="selbox"></div>
+</div>
+<div id="startmenu" class="hidden"></div>
+<div id="ctxmenu" class="menu hidden"></div>
+<div id="taskbar">
+  <button id="startbtn" class="tbtn"><span id="startlogo"></span><b>Start</b></button>
+  <div class="tsep"></div>
+  <div id="quick"></div>
+  <div class="tsep"></div>
+  <div id="tasks"></div>
+  <div id="tray">
+    <span id="trayvol"></span><span id="traynet"></span><span id="clock">10:24 AM</span>
+  </div>
+</div>
+<script src="icons.js"></script>
+<script src="icons2.js"></script>
+<script src="search.js"></script>
+<script src="os.js"></script>
+<script src="apps.js"></script>
+<script src="boot.js"></script>
+</body>
+</html>

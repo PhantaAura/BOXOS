@@ -1,0 +1,19 @@
+{
+  "name": "boxos",
+  "productName": "BOXOS",
+  "version": "0.3.0",
+  "description": "BOXOS Windows 99 Edition - a retro desktop that runs on your real computer",
+  "main": "main.js",
+  "author": "BOXOS",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "pack:mac": "electron-packager . BOXOS --platform=darwin --arch=arm64,x64 --out=dist --overwrite --icon=build/icon.icns",
+    "pack:win": "electron-packager . BOXOS --platform=win32 --arch=x64 --out=dist --overwrite --icon=build/icon.ico",
+    "pack:linux": "electron-packager . BOXOS --platform=linux --arch=x64 --out=dist --overwrite"
+  },
+  "devDependencies": {
+    "@electron/packager": "^20.3.0",
+    "electron": "^33.4.11"
+  }
+}
